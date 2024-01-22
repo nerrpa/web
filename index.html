@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Первая лаба по веб-программированию</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Зуенок Александра Романовна</h1>
+        <h1>Номер группы: P3222</h1>
+        <h1>Вариант: 3291</h1>
+    </header>
+    <main>
+
+        <form action="script.php" method="get" id="data-form">
+
+            <div id="error-message" class="centered-error" style="display: none;"></div>
+
+            <div id="container" class="container">
+                
+            <br><img class="grafik" src="areas.png" width="200"  text-align: center>
+            
+                <div id="setter" class="setter">
+                    
+                    <div>
+                        <label>Выберите X:</label>
+                        <select id="x" class="x-input">
+                            <option value="choose">Выберите координату</option>
+                            <option value="-4">-4</option>
+                            <option value="-3">-3</option>
+                            <option value="-2">-2</option>
+                            <option value="-1">-1</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="y-input">Выберите Y:</label>
+                        <input type="text" id="yInput" name="y" required pattern="^-?\d+([.,]?\d*)?$" placeholder="от -5 до 5">
+                    </div>
+                    <div>
+                        <div id="r-checkboxes">
+                        <label>
+                            <label>Выберите R:</label> 
+                            <input type="checkbox" name="r" value="1">1
+                            <input type="checkbox" name="r" value="1.5">1.5
+                            <input type="checkbox" name="r" value="2">2
+                            <input type="checkbox" name="r" value="2.5">2.5
+                            <input type="checkbox" name="r" value="3">3
+                        </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="submit">Отправить</button>
+            </div>
+            <div id="error_div"></div>
+        </form>
+        <div>
+            <button type="result">Результаты</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

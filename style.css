@@ -1,0 +1,79 @@
+/* Общий стиль для всего документа */
+* {
+  text-align: center;
+}
+
+header {
+  font-family: fantasy;  
+  font-size: 20px;
+  /* Наследование */
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: rgb(255, 139, 97);
+  /* Каскадирование */
+  font-family: 'Fantasy', fantasy;
+}
+/* Селектор псевдоэлементов */
+.container::before {
+  content: "Проверьте попадание точки на координатной плоскости в заданную область";
+  display: block;
+  color: black;
+}
+
+/* Селектор потомств */
+.container .setter {
+  font-size: 15px;
+  background-color: rgb(247, 120, 73);
+}
+
+/* Селекторы атрибутов */
+button[type="submit"] {
+  background-color: rgb(232, 229, 229);
+}
+button[type="result"] {
+  background-color: rgb(232, 229, 229);
+}
+button[onclick="location.href = 'index.html';"] {
+  background-color: rgb(232, 229, 229);
+}
+
+/* Селекторы элементов */
+div {
+  margin: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 30px;
+}
+.container {
+  background-color: rgb(254, 129, 83);
+}
+
+.x-input {
+  text-align: left !important;
+ }
+/* Стиль для таблицы */
+.col-header {
+  text-align: center;
+  background-color: rgb(248, 244, 244);
+  padding: 8px;
+}
+
+/* Отступы между колонками */
+th.col-header,
+td {
+  border-right: 1px solid #000;
+}
+
+/* Удаляем правую границу у последней ячейки в каждой строке */
+th.col-header:last-child,
+td:last-child {
+  border-right: none;
+}
+
+/* Стиль для кнопки при наведении (селектор псевдокласса) */
+button:hover {
+  background-color: rgb(207, 206, 206);
+}
